@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loomies</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script> -->
+</head>
+
+<body>
+    <!-- navigation  -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="index.html">Home</a>
+        <a href="pages/cart.html">Cart</a>
+    </div>
+    <div id="close-sidepanel" onclick="closeNav()"></div>
+    <div class="navbar">
+        <div>
+            <img class="burgerMenu" src=" assets/burger-menu.svg" onclick="openNav()" alt="">
+        </div>
+
+        <div>
+            <div id="navLogo"><img src="assets/Loomies-logo.svg"></div>
+        </div>
+        <div>
+            <div id="socialMediaIconGroup"><a href="" class="socialMediaIcon"><img src="assets/facebook-icon.svg">
+                </a>
+                <a href="" class="socialMediaIcon"><img src="assets/instagram-icon.svg">
+                </a>
+                <a href="" class="socialMediaIcon"><img src="assets/twitter-icon.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end navigation  -->
+
+    <!-- header -->
+
+    <header>
+        <div>
+            <h1 class="header header-info header-1">About</h1>
+            <p class=" header header-info header-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue non non imperdiet lectus pretium aliquet
+                odio. Ut fusce proin ipsum consectetur venenatis. Erat sed et id amet tempus dui aenean gravida lacinia.
+                Ultrices ac, nulla tempus fames. Leo maecenas morbi id vitae a proin vitae. Nisl massa eget vitae
+                suspendisse risus, mattis. Purus mi tortor ultrices commodo auctor justo. Sapien amet vitae hendrerit
+                interdum morbi. Eget gravida ipsum purus.
+            </p>
+
+            <h1 class="header header-info header-2">Other about</h1>
+            <p class=" header header-info header-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue non non imperdiet lectus pretium aliquet
+                odio. Ut fusce proin ipsum consectetur venenatis. Erat sed et id amet tempus dui aenean gravida lacinia.
+                Ultrices ac, nulla tempus fames. Leo maecenas morbi id vitae a proin vitae. Nisl massa eget vitae
+                suspendisse risus, mattis. Purus mi tortor ultrices commodo auctor justo. Sapien amet vitae hendrerit
+                interdum morbi. Eget gravida ipsum purus.
+            </p>
+
+            <h1 class="header header-info header-3">Other other about</h1>
+            <p class=" header header-info header-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue non non imperdiet lectus pretium aliquet
+                odio. Ut fusce proin ipsum consectetur venenatis. Erat sed et id amet tempus dui aenean gravida lacinia.
+                Ultrices ac, nulla tempus fames. Leo maecenas morbi id vitae a proin vitae. Nisl massa eget vitae
+                suspendisse risus, mattis. Purus mi tortor ultrices commodo auctor justo. Sapien amet vitae hendrerit
+                interdum morbi. Eget gravida ipsum purus.
+            </p>
+
+            <div id="header-controllers">
+                <div class="previous slide-1">
+                    <img class="prev" src="assets/left-chevron.svg">
+                </div>
+                <!-- previous -->
+                <div class="next slide-1">
+                    <img class="nex" src="assets/right-chevron.svg">
+                </div>
+                <!-- next -->
+            </div>
+        </div>
+        <!-- left side of header  -->
+
+        <img class="header header-image header-1 " src="assets/brooke-lark-8beTH4VkhLI-unsplash.jpg">
+        <img class="header header-image header-2 " src="assets/brooke-lark-8beTH4VkhLI-unsplash.jpg">
+        <img class="header header-image header-3 " src="assets/brooke-lark-8beTH4VkhLI-unsplash.jpg">
+        <!-- header images  -->
+    </header>
+    <!-- end header  -->
+    <!-- content  -->
+    <div id="ice-cream-maker">
+        <div id="create-section">
+            <div>
+                <select id="container-input" required>
+                    <option>cup</option>
+                    <option>cone</option>
+                    <option>waffle cone</option>
+                </select>
+            </div>
+            <div>
+                <select id="size-input" required>
+                    <option>small</option>
+                    <option>medium</option>
+                    <option>large</option>
+                </select>
+            </div>
+            <div>
+                <select id="topping-input" required>
+                    <option>sprinkles</option>
+                    <option>almonds</option>
+                    <option>flake</option>
+                </select>
+            </div>
+            <div>
+                <select id="flavour-input" required>
+                    <option>Strawberry</option>
+                    <option>Vanilla</option>
+                    <option>Chocolate</option>
+                </select>
+            </div>
+        </div>
+        <div id="ice-cream-info">
+            <div>
+                <h3>Name:</h3>
+                <div class="display-box"></div>
+            </div>
+            <div>
+                <h3>Price:</h3>
+                <div class="display-box"></div>
+            </div>
+            <div>
+                <div id="add-to-cart-btn" class="btn">Add to cart</div>
+            </div>
+        </div>
+    </div>
+    <!-- end content  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/iceCreeam.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

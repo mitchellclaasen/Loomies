@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/cart.css" rel="stylesheet" />
+    <title>Loomies|Cart</title>
+</head>
+
+<body>
+    <!-- navigation  -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="../index.html">Home</a>
+        <a href="cart.html">Cart</a>
+    </div>
+    <div id="close-sidepanel" onclick="closeNav()"></div>
+    <div class="navbar">
+        <div>
+            <img class="burgerMenu" src=" ../assets/burger-menu.svg" onclick="openNav()" alt="">
+        </div>
+
+        <div>
+            <div id="navLogo"><img src="../assets/Loomies-logo.svg"></div>
+        </div>
+        <div>
+            <div id="socialMediaIconGroup"><a href="" class="socialMediaIcon"><img src="../assets/facebook-icon.svg">
+                </a>
+                <a href="" class="socialMediaIcon"><img src="../assets/instagram-icon.svg">
+                </a>
+                <a href="" class="socialMediaIcon"><img src="../assets/twitter-icon.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end navigation  -->
+
+    <div class="order-info">
+        <div class="cart-content">
+            <div class="cart-heading">Cart</div>
+            <div class="cart-items-continer">
+                <div class="cart-item">
+                    <p class="item-name">Double choc sprinkle cone</p>
+                    <p class="item-price">R123</p>
+                    <img src="../assets/close-icon.svg" class="item-remove">
+                </div>
+                <div class="cart-item">
+                    <p class="item-name">Triple strawberry flake cup</p>
+                    <p class="item-price">R123</p>
+                    <img src="../assets/close-icon.svg" class="item-remove">
+                </div>
+                <div class="cart-item">
+                    <p class="item-name">Single vanilla something waffle cone</p>
+                    <p class="item-price">R123</p>
+                    <img src="../assets/close-icon.svg" class="item-remove">
+                </div>
+            </div>
+        </div>
+        <div class="order-summary-container">
+            <h1>Summary</h1>
+            <p>Order total:</p>
+            <p id="total-price">R123,45</p>
+            <div class="btn" id="checkout-button">Checkout</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/iceCreeam.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>
