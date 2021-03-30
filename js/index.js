@@ -1,14 +1,22 @@
-console.log("main.js linked");
+console.log("index.js linked");
+
+var iceCream = new IceCream();
+
+// var container = $("#container-input").val();
+// var size = $("#size-input").val();
+// var topping = $("#topping-input").val();
+// var flavour = $("#flavour-input").val();
+
+console.log(iceCream);
 
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
-    document.getElementById("close-sidepanel").style.width = "1190px";
-
+    $("#mySidepanel").width("250px");
+    $("#close-sidepanel").width("1190px");
 }
 
 function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("close-sidepanel").style.width = "0";
+    $("#mySidepanel").width("0");
+    $("#close-sidepanel").width("0");
 }
 
 $(".header").hide();
@@ -64,4 +72,16 @@ $(".previous").on("click", function () {
         $(".header").hide();
         $(".header-1").show();
     }
+});
+
+$("select").change(function () {
+    iceCream.updateIceCream($("#container-input").val(), $("#size-input").val(), $("#topping-input").val(), $("#flavour-input").val());
+    iceCream.updatePrice();
+    $("#name-display-box").text(iceCream.name);
+    $("#price-display-box").text("R " + iceCream.price);
+
+});
+
+$("#add-to-cart-btn").click(function () {
+    iceCream.addToCart()
 });

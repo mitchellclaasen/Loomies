@@ -8,9 +8,6 @@
     <title>Loomies</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script> -->
 </head>
 
 <body>
@@ -29,7 +26,8 @@
             <div id="navLogo"><img src="assets/Loomies-logo.svg"></div>
         </div>
         <div>
-            <div id="socialMediaIconGroup"><a href="" class="socialMediaIcon"><img src="assets/facebook-icon.svg">
+            <div id="socialMediaIconGroup">
+                <a href="" class="socialMediaIcon"><img src="assets/facebook-icon.svg">
                 </a>
                 <a href="" class="socialMediaIcon"><img src="assets/instagram-icon.svg">
                 </a>
@@ -41,34 +39,24 @@
     <!-- end navigation  -->
 
     <!-- header -->
-
     <header>
         <div>
-            <h1 class="header header-info header-1">About</h1>
+            <h1 class="header header-info header-1">About Us</h1>
             <p class=" header header-info header-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue non non imperdiet lectus pretium aliquet
-                odio. Ut fusce proin ipsum consectetur venenatis. Erat sed et id amet tempus dui aenean gravida lacinia.
-                Ultrices ac, nulla tempus fames. Leo maecenas morbi id vitae a proin vitae. Nisl massa eget vitae
-                suspendisse risus, mattis. Purus mi tortor ultrices commodo auctor justo. Sapien amet vitae hendrerit
-                interdum morbi. Eget gravida ipsum purus.
+                We simply make the best ice creams on the planet and you dont even need to leave the house to enjoy
+                them.
             </p>
 
-            <h1 class="header header-info header-2">Other about</h1>
+            <h1 class="header header-info header-2">About our ice creams</h1>
             <p class=" header header-info header-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue non non imperdiet lectus pretium aliquet
-                odio. Ut fusce proin ipsum consectetur venenatis. Erat sed et id amet tempus dui aenean gravida lacinia.
-                Ultrices ac, nulla tempus fames. Leo maecenas morbi id vitae a proin vitae. Nisl massa eget vitae
-                suspendisse risus, mattis. Purus mi tortor ultrices commodo auctor justo. Sapien amet vitae hendrerit
-                interdum morbi. Eget gravida ipsum purus.
+                Our ice creams are made of the freshest most organic ingredients you could images, making them healthier
+                than normal icecreams and tastier too.
             </p>
 
-            <h1 class="header header-info header-3">Other other about</h1>
+            <h1 class="header header-info header-3">About to be fun</h1>
             <p class=" header header-info header-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue non non imperdiet lectus pretium aliquet
-                odio. Ut fusce proin ipsum consectetur venenatis. Erat sed et id amet tempus dui aenean gravida lacinia.
-                Ultrices ac, nulla tempus fames. Leo maecenas morbi id vitae a proin vitae. Nisl massa eget vitae
-                suspendisse risus, mattis. Purus mi tortor ultrices commodo auctor justo. Sapien amet vitae hendrerit
-                interdum morbi. Eget gravida ipsum purus.
+                Just create you own icecream, add it to your cart and purchase it and it will be delivered to you as
+                soon as possible, it is made in the truck so there is a gaurantee it will not melt.
             </p>
 
             <div id="header-controllers">
@@ -85,51 +73,56 @@
         <!-- left side of header  -->
 
         <img class="header header-image header-1 " src="assets/brooke-lark-8beTH4VkhLI-unsplash.jpg">
-        <img class="header header-image header-2 " src="assets/brooke-lark-8beTH4VkhLI-unsplash.jpg">
-        <img class="header header-image header-3 " src="assets/brooke-lark-8beTH4VkhLI-unsplash.jpg">
+        <img class="header header-image header-2 " src="assets/ian-dooley-TLD6iCOlyb0-unsplash.jpg">
+        <img class="header header-image header-3 " src="assets/irene-kredenets-tVs-nga-tpo-unsplash.jpg">
         <!-- header images  -->
     </header>
     <!-- end header  -->
+
     <!-- content  -->
     <div id="ice-cream-maker">
         <div id="create-section">
             <div>
-                <select id="container-input" required>
-                    <option>cup</option>
-                    <option>cone</option>
-                    <option>waffle cone</option>
+                <select id="container-input">
+                    <option value="" selected>Select container</option>
+                    <option value="cup">cup</option>
+                    <option value="cone">cone</option>
+                    <option value="waffle-cone">waffle cone</option>
                 </select>
             </div>
             <div>
-                <select id="size-input" required>
-                    <option>small</option>
-                    <option>medium</option>
-                    <option>large</option>
+                <select id="size-input">
+                    <option value="" selected>Select size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
                 </select>
             </div>
             <div>
-                <select id="topping-input" required>
-                    <option>sprinkles</option>
-                    <option>almonds</option>
-                    <option>flake</option>
+                <select id="topping-input">
+                    <option value="" selected>Select topping</option>
+                    <option value="sprinkles">sprinkles</option>
+                    <option value="almonds">almonds</option>
+                    <option value="flake">flake</option>
                 </select>
             </div>
             <div>
-                <select id="flavour-input" required>
-                    <option>Strawberry</option>
-                    <option>Vanilla</option>
-                    <option>Chocolate</option>
+                <select id="flavour-input">
+                    <option value="" selected>Select flavour</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
                 </select>
             </div>
         </div>
         <div id="ice-cream-info">
             <div>
                 <h3>Name:</h3>
-                <div class="display-box"></div>
+                <p id="name-display-box" class="display-box"></p>
             </div>
             <div>
                 <h3>Price:</h3>
-                <div class="display-box"></div>
+                <div id="price-display-box" class="display-box"></div>
             </div>
             <div>
                 <div id="add-to-cart-btn" class="btn">Add to cart</div>
@@ -137,11 +130,15 @@
         </div>
     </div>
     <!-- end content  -->
+
+    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script src="js/iceCreeam.js"></script>
+
     <script src="js/cart.js"></script>
+    <script src="js/iceCreeam.js"></script>
+    <script src="js/index.js"></script>
+    <!-- end scripts -->
 </body>
 
 </html>
