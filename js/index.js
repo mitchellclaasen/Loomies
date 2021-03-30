@@ -83,5 +83,6 @@ $("select").change(function () {
 });
 
 $("#add-to-cart-btn").click(function () {
-    iceCream.addToCart()
+    iceCream.addToCart();
+    iceCream = new IceCream();
 });

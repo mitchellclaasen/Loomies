@@ -1,13 +1,24 @@
 console.log("iceCream.js linked");
 
 class IceCream {
-    constructor() {
-        this.container = "";
-        this.size = "";
-        this.topping = "";
-        this.flavour = "";
+    // constructor() {
+    //     this.container = "";
+    //     this.size = "";
+    //     this.topping = "";
+    //     this.flavour = "";
+    //     this.name = "";
+    //     this.price = 0;
+    // }
+
+    constructor(paramContainer, paramSize, paramTopping, paramFlavour) {
+        this.container = paramContainer;
+        this.size = paramSize;
+        this.topping = paramTopping;
+        this.flavour = paramFlavour;
         this.name = "";
+        this.updateName();
         this.price = 0;
+        this.updatePrice();
     }
 
     updateName() {
