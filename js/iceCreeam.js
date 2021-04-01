@@ -84,11 +84,8 @@ class IceCream {
     }
 
     addToCart() {
-        cartArray.push(this);
+        console.log(this);
+        shoppingCart.addItem(this);
+        console.log("added to cart");
     }
 }
-
-// var iceCream = new IceCream();
-// iceCream.updateIceCream("cup", "small", "flake", "vanilla");
-// console.log(iceCream);
-// iceCream.addToCart();

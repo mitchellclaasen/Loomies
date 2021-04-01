@@ -2,23 +2,6 @@ console.log("index.js linked");
 
 var iceCream = new IceCream();
 
-// var container = $("#container-input").val();
-// var size = $("#size-input").val();
-// var topping = $("#topping-input").val();
-// var flavour = $("#flavour-input").val();
-
-console.log(iceCream);
-
-function openNav() {
-    $("#mySidepanel").width("250px");
-    $("#close-sidepanel").width("1190px");
-}
-
-function closeNav() {
-    $("#mySidepanel").width("0");
-    $("#close-sidepanel").width("0");
-}
-
 $(".header").hide();
 $(".header-1").show();
 
@@ -84,5 +67,4 @@ $("select").change(function () {
 
 $("#add-to-cart-btn").click(function () {
     iceCream.addToCart();
-    iceCream = new IceCream();
 });
